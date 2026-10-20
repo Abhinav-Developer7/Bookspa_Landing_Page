@@ -32,9 +32,9 @@ export default function HeroSection() {
             </div>
 
             <div className={styles.heroVisual}>
-                <div className={styles.visualCube}>
-                    <Image src="/image/logo.png" alt="Benzo Technologies" width={200} height={200} style={{ objectFit: "contain" }} priority />
-                </div>
+                {/* <div className={styles.visualCube}> */}
+                <Image src="/image/logo-nav.png" alt="Benzo Technologies" width={400} height={400} style={{ objectFit: "contain" }} priority />
+                {/* </div> */}
             </div>
         </section>
     );
