@@ -1,0 +1,118 @@
+.contactSection {
+    padding: 100px 24px;
+    background: #111827;
+    color: #ffffff;
+}
+
+.contactContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.contactLabel {
+    color: #93b4ff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.contactContent h2 {
+    margin: 20px 0;
+    font-size: clamp(34px, 4vw, 54px);
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+    font-family: 'Euro caps', sans-serif;
+}
+
+.contactContent h2 span {
+    color: #93b4ff;
+}
+
+.contactDescription {
+    max-width: 540px;
+    color: #cbd5e1;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.contactButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 28px;
+    padding: 14px 22px;
+    border-radius: 8px;
+    background: #5f89f5;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.contactButton:hover {
+    background: #426fe0;
+}
+
+.contactButton svg {
+    transition: transform 0.2s ease;
+}
+
+.contactButton:hover svg {
+    transform: translate(3px, -3px);
+}
+
+.contactDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.contactDetail {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.contactIcon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #374151;
+    border-radius: 12px;
+    background: #1f2937;
+    color: #93b4ff;
+}
+
+.contactDetail h3 {
+    margin: 0 0 6px;
+    font-size: 16px;
+}
+
+.contactDetail p {
+    margin: 0;
+    color: #cbd5e1;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .contactSection {
+        padding: 64px 20px;
+    }
+
+    .contactContainer {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .contactContent h2 {
+        letter-spacing: -1px;
+    }
+}

@@ -1,0 +1,93 @@
+.servicesSection {
+    padding: 100px 24px;
+    background: #f7f7f7;
+    color: #171717;
+}
+
+.servicesContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.servicesHeading {
+    max-width: 680px;
+    margin-bottom: 48px;
+}
+
+.servicesLabel {
+    color: #5f89f5;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.servicesHeading h2 {
+    margin: 18px 0;
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+}
+
+.servicesHeading p,
+.serviceCard p {
+    color: #666;
+    line-height: 1.8;
+}
+
+.servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.serviceCard {
+    padding: 32px;
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    border-radius: 16px;
+    transition: transform 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.serviceCard:hover {
+    transform: translateY(-5px);
+    border-color: #5f89f5;
+}
+
+.serviceCard svg {
+    transition: 0.3s ease;
+}
+
+.serviceCard:hover svg {
+    transform: translate(3px, -3px);
+}
+
+.serviceNumber {
+    color: #5f89f5;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.serviceCard h3 {
+    margin-top: 40px;
+    font-size: 22px;
+}
+
+.serviceLink {
+    display: inline-flex;
+    gap: 8px;
+    margin-top: 18px;
+    color: #345fc7;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .servicesSection {
+        padding: 64px 20px;
+    }
+
+    .servicesGrid {
+        grid-template-columns: 1fr;
+    }
+}

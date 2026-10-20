@@ -2,10 +2,8 @@
 const nextConfig = {
   /* config options here */
   experimental: {
-    agentFeedback: true,
+    reactStrictMode: true,
   },
-  cacheComponents: true,
-  partialPrefetching: true,
   reactCompiler: true,
 };
 
