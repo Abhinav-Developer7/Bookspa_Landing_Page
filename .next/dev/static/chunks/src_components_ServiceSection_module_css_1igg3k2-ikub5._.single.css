@@ -1,0 +1,94 @@
+/* [project]/src/components/ServiceSection.module.css [app-client] (css) */
+.ServiceSection-module__zm8nLG__servicesSection {
+  color: #171717;
+  background: #f7f7f7;
+  padding: 100px 24px;
+}
+
+.ServiceSection-module__zm8nLG__servicesContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ServiceSection-module__zm8nLG__servicesHeading {
+  max-width: 680px;
+  margin-bottom: 48px;
+}
+
+.ServiceSection-module__zm8nLG__servicesLabel {
+  color: #5f89f5;
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.ServiceSection-module__zm8nLG__servicesHeading h2 {
+  letter-spacing: -1.5px;
+  margin: 18px 0;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.15;
+}
+
+.ServiceSection-module__zm8nLG__servicesHeading p, .ServiceSection-module__zm8nLG__serviceCard p {
+  color: #666;
+  line-height: 1.8;
+}
+
+.ServiceSection-module__zm8nLG__servicesGrid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  display: grid;
+}
+
+.ServiceSection-module__zm8nLG__serviceCard {
+  background: #fff;
+  border: 1px solid #e7e7e7;
+  border-radius: 16px;
+  padding: 32px;
+  transition: transform .25s, border-color .25s;
+}
+
+.ServiceSection-module__zm8nLG__serviceCard:hover {
+  border-color: #5f89f5;
+  transform: translateY(-5px);
+}
+
+.ServiceSection-module__zm8nLG__serviceCard svg {
+  transition: all .3s;
+}
+
+.ServiceSection-module__zm8nLG__serviceCard:hover svg {
+  transform: translate(3px, -3px);
+}
+
+.ServiceSection-module__zm8nLG__serviceNumber {
+  color: #5f89f5;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ServiceSection-module__zm8nLG__serviceCard h3 {
+  margin-top: 40px;
+  font-size: 22px;
+}
+
+.ServiceSection-module__zm8nLG__serviceLink {
+  color: #345fc7;
+  gap: 8px;
+  margin-top: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+}
+
+@media (max-width: 768px) {
+  .ServiceSection-module__zm8nLG__servicesSection {
+    padding: 64px 20px;
+  }
+
+  .ServiceSection-module__zm8nLG__servicesGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=src_components_ServiceSection_module_css_1igg3k2-ikub5._.single.css.map*/

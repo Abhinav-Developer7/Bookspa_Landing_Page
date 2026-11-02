@@ -1,4 +1,5 @@
 
+import { icons } from "lucide-react";
 import "./globals.css";
 
 export const metadata = {
@@ -14,6 +15,9 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
+  icons: {
+    icon: "/image/logo.png"
+  }
 };
 
 export default function RootLayout({ children }) {

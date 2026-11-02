@@ -1,0 +1,121 @@
+/* [project]/src/components/ContactSection.module.css [app-client] (css) */
+.ContactSection-module__UONp9G__contactSection {
+  color: #fff;
+  background: #111827;
+  padding: 100px 24px;
+}
+
+.ContactSection-module__UONp9G__contactContainer {
+  grid-template-columns: 1.2fr .8fr;
+  align-items: center;
+  gap: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+}
+
+.ContactSection-module__UONp9G__contactLabel {
+  color: #93b4ff;
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.ContactSection-module__UONp9G__contactContent h2 {
+  letter-spacing: -1.5px;
+  margin: 20px 0;
+  font-family: Euro caps, sans-serif;
+  font-size: clamp(34px, 4vw, 54px);
+  line-height: 1.15;
+}
+
+.ContactSection-module__UONp9G__contactContent h2 span {
+  color: #93b4ff;
+}
+
+.ContactSection-module__UONp9G__contactDescription {
+  color: #cbd5e1;
+  max-width: 540px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.ContactSection-module__UONp9G__contactButton {
+  color: #fff;
+  background: #5f89f5;
+  border-radius: 8px;
+  align-items: center;
+  gap: 10px;
+  margin-top: 28px;
+  padding: 14px 22px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background .2s;
+  display: inline-flex;
+}
+
+.ContactSection-module__UONp9G__contactButton:hover {
+  background: #426fe0;
+}
+
+.ContactSection-module__UONp9G__contactButton svg {
+  transition: transform .2s;
+}
+
+.ContactSection-module__UONp9G__contactButton:hover svg {
+  transform: translate(3px, -3px);
+}
+
+.ContactSection-module__UONp9G__contactDetails {
+  flex-direction: column;
+  gap: 28px;
+  display: flex;
+}
+
+.ContactSection-module__UONp9G__contactDetail {
+  align-items: center;
+  gap: 18px;
+  display: flex;
+}
+
+.ContactSection-module__UONp9G__contactIcon {
+  color: #93b4ff;
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 12px;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  display: flex;
+}
+
+.ContactSection-module__UONp9G__contactDetail h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.ContactSection-module__UONp9G__contactDetail p {
+  color: #cbd5e1;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .ContactSection-module__UONp9G__contactSection {
+    padding: 64px 20px;
+  }
+
+  .ContactSection-module__UONp9G__contactContainer {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .ContactSection-module__UONp9G__contactContent h2 {
+    letter-spacing: -1px;
+  }
+}
+
+/*# sourceMappingURL=src_components_ContactSection_module_css_1igg3k2-ikub5._.single.css.map*/

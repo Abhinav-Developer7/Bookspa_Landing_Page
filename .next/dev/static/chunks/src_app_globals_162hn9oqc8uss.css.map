@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Abhin/OneDrive/Desktop/bookspa/src/app/globals.css"],"sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nhtml {\n  scroll-behavior: smooth;\n}\n\nbody {\n  font-family: Arial, sans-serif;\n  background: #F7F7F7;\n  color: #010108;\n}\n\n@font-face {\n  font-family: \"Euro caps\";\n  src: url(\"/fonts/EUROCAPS.TTF\") format(\"truetype\");\n  font-weight: 400;\n  font-style: normal;\n  font-display: swap;\n}"],"names":[],"mappings":"AAAA;;;;;;AAMA;;;;AAIA;;;;;;AAMA"}}]
+}

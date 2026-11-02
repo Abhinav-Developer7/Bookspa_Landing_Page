@@ -1,0 +1,26 @@
+/* [project]/src/app/globals.css [app-client] (css) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #010108;
+  background: #f7f7f7;
+  font-family: Arial, sans-serif;
+}
+
+@font-face {
+  font-family: Euro caps;
+  src: url("/fonts/EUROCAPS.TTF") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*# sourceMappingURL=src_app_globals_162hn9oqc8uss.css.map*/
