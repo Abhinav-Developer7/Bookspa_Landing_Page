@@ -39,7 +39,7 @@ export default function ContactSection() {
                         </div>
                         <div>
                             <h3>Email us</h3>
-                            <p>info@example.com</p>
+                            <p>benzo@gmail.com</p>
                         </div>
                     </div>
 

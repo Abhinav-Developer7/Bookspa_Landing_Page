@@ -10,6 +10,8 @@
   border-bottom-width: 1px;
   border-bottom-color: white;
   border-bottom-style: solid;
+
+
 }
 
 .logo {
@@ -33,10 +35,22 @@
   gap: 22px;
 }
 
+.Link {
+  text-decoration: none;
+  color: rgb(5, 5, 5);
+}
+
 .navLinks a {
   color: white;
   text-decoration: none;
   font-size: 14px;
+}
+
+.maindiv {
+  background-color: #5b87f7;
+  position: relative;
+  z-index: 1000;
+
 }
 
 .navLinks a:hover {
@@ -59,6 +73,18 @@
   transform: translateY(-2px);
 }
 
+.menu-toggle {
+  display: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #111;
+}
+
+.mobile-menu {
+  display: none;
+}
+
 @media (max-width: 1000px) {
   .navLinks {
     gap: 12px;
@@ -74,18 +100,54 @@
 }
 
 @media (max-width: 700px) {
-  .navbar {
-    padding: 20px 5%;
+  .menu-toggle {
+    display: block;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 230px;
+    width: 200px;
+
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 22px;
+    padding: 0 6%;
+    background-color: white;
+
+
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+
+
+    max-height: 0;
+
+    overflow: hidden;
+    transition: max-height 0.3s ease,
+      padding 0.3s ease;
+
+  }
+
+
+
+  .mobile-menu.active {
+    max-height: 300px;
+    padding: 20px 6% 25px;
+    visibility: visible;
+    opacity: .80;
+    transform: translateY(0);
+
   }
 
   .navLinks {
-    width: 100%;
-    order: 3;
-    overflow-x: auto;
-    padding: 8px 0;
+    display: none;
   }
 
   .navButton {
-    padding: 10px 14px;
+    display: none;
   }
 }
