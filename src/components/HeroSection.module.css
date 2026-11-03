@@ -43,6 +43,8 @@
 
 .heroButtons svg {
   transition: transform 0.2s ease;
+  display: flex;
+
 }
 
 .heroButtons :hover svg {
@@ -52,8 +54,10 @@
 .primaryButton,
 .secondaryButton {
   display: flex;
+  justify-content: space-between;
   padding: 15px 28px;
   border-radius: 30px;
+  width: 250px;
   text-decoration: none;
   font-size: 20px;
   transition: 0.2s ease;
