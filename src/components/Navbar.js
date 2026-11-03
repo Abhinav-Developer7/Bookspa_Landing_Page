@@ -8,10 +8,12 @@ import Image from "next/image";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const PathName = usePathname();
 
     const navLinks = [
         { name: "Home", href: "#home" },
@@ -42,17 +44,29 @@ export default function Navbar() {
                     aria-label={isOpen ? "Close menu" : "Open menu"}
                     aria-expanded={isOpen}
                 >
-                    {isOpen ? <X size={26} style={{ color: "white" }} /> : <Menu size={26} style={{ color: "white" }} />}
+                    {isOpen ? "" : <Menu size={26} style={{ color: "white" }} />}
                 </button>
 
             </header >
             <div className={`${styles["mobile-menu"]} ${isOpen ? styles.active : ""}`}>
+                <button
+                    className={styles["menu-toggle"]}
+                    onClick={() => setIsOpen(!isOpen)}
+                    aria-label={isOpen ? "Close menu" : "Open menu"}
+                    aria-expanded={isOpen}
+                >
+                    {isOpen ? <X size={26} style={{ color: "white" }} /> : ""}
+                </button>
+
                 {navLinks.map((link) => (
                     <Link
-                        className={styles.Link}
+
                         key={link.name}
                         href={link.href}
                         onClick={() => setIsOpen(false)}
+                        className={styles.Link}
+
+
                     >
                         {link.name}
                     </Link>

@@ -31,7 +31,7 @@ export default function Footer() {
                         <h3>Let&apos;s connect</h3>
 
                         <a
-                            href="mailto:info@example.com"
+                            href="mailto:info@benzotechnologies.com"
                             className={styles.footerEmail}
                         >
                             Get in touch

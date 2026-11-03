@@ -24,7 +24,7 @@ export default function ContactSection() {
                     </p>
 
                     <a
-                        href="mailto:info@example.com"
+                        href="mailto:info@benzotechnologies.com"
                         className={styles.contactButton}
                     >
                         Get in touch
@@ -39,7 +39,7 @@ export default function ContactSection() {
                         </div>
                         <div>
                             <h3>Email us</h3>
-                            <p>benzo@gmail.com</p>
+                            <p>info@benzotechnologies.com</p>
                         </div>
                     </div>
 
@@ -59,7 +59,8 @@ export default function ContactSection() {
                         </div>
                         <div>
                             <h3>Our location</h3>
-                            <p>Connect with us for details</p>
+                            <p>CWS-1V-778630
+                                26th Floor, Amber Gem Tower, Ajman</p>
                         </div>
                     </div>
                 </div>
